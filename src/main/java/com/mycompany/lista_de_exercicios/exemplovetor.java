@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.lista_de_exercicios;
-import java.util.Arrays;
 /**
  *
  * @author arthur.7923
