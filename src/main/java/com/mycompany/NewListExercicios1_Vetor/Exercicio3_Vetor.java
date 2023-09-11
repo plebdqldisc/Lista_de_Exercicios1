@@ -13,12 +13,6 @@ public class Exercicio3_Vetor {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("quantos valores deseja na lista: ");
-        
-        
-       
-            
-        
-        
+        int quantidNum = scanner.nextInt();
     }
-    
-}
+}    
