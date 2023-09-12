@@ -10,17 +10,21 @@ import java.util.Scanner;
  */
 public class ex_4vetor {
     public static void main(String args[]) {
-        Scanner scanner = new Scanner (System.in);
-        
-        int[] numero = new int[5];
-        
-        numero[0]=1;
-        numero[1]=2;
-        numero[2]=3;
-        numero[3]=4;
-        numero[4]=5;
+
+        int[] tamanho = {132,233,32,43,600};
         
         System.out.println("Vetor original:");
-        System.out.println("numero " + numero[0]);
+        System.out.println(tamanho[0]);
+        System.out.println(tamanho[1]);
+        System.out.println(tamanho[2]);
+        System.out.println(tamanho[3]);
+        System.out.println(tamanho[4]);
+        
+       //tambem serve tamanho.length no lugar do 5
+        for(int i = 5 - 1;i >= 0; i--) {
+        
+            System.out.println("Vetor INVERTIDO:");
+            System.out.println(tamanho[i]);
+        }
     }
 }
