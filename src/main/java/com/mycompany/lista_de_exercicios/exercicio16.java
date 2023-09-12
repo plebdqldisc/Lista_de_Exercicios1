@@ -10,23 +10,22 @@ import java.util.Scanner;
  */
 public class exercicio16 {
      public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in);
+         //Scanner scanner = new Scanner(System.in);
          
          System.out.println("digite uma frase");
-         String frase;
+         String frase = new Scanner(System.in).nextLine(); //pode ser feito dessa forma tambem!
          
-         int cont = 0;
-         int index= 0;
+         int numCaract = 0;
          
-         frase = scanner.nextLine();
          
-         while ( index < frase.length() ) {
-         if (frase.charAt(index) != ' ') {
-                cont++;
+         //frase = scanner.nextLine();
+         
+        for(int indice = 0; indice < frase.length(); indice++) {
+            if (frase.charAt(indice) != ' ') {
+                numCaract++;
+            
             }
-            index++;
         }
-         System.out.println("A frase tem " + cont + " caracteres ");
-     }
-    
+         System.out.println("O numero de caracteres na frase é " + numCaract);
+    }
 }

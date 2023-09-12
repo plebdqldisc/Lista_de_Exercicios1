@@ -31,6 +31,5 @@ public class ex_7vetor {
         for(int i = 0; i < tamanholistatotal; i++) {
             System.out.println(ListMesc[i]);
         }
-        
     }
 }
