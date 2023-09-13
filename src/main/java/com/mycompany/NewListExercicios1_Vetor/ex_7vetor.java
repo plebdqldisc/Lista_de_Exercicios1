@@ -2,11 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package com.mycompany.NewListExercicios1_Vetor;
 
 /**
  *
  * @author arthur.7923
+=======
+package exerciciosdevetor;
+//listas mescladas
+/**
+ *
+ * @author Usuario
+>>>>>>> 55a2514938aeb3fc6e8dfa3886d5dc4b1b50f637
  */
 public class ex_7vetor {
     public static void main (String[] args) {
@@ -31,5 +39,11 @@ public class ex_7vetor {
         for(int i = 0; i < tamanholistatotal; i++) {
             System.out.println(ListMesc[i]);
         }
+
     }
 }
+
+        
+    //}
+//}
+

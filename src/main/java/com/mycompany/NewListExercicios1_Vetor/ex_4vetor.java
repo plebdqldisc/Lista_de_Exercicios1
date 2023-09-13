@@ -12,8 +12,10 @@ public class ex_4vetor {
     public static void main(String args[]) {
 
         int[] tamanho = {132,233,32,43,600};
+
         
         
+
         
         System.out.println("Vetor original:");
         System.out.println(tamanho[0]);
@@ -22,8 +24,13 @@ public class ex_4vetor {
         System.out.println(tamanho[3]);
         System.out.println(tamanho[4]);
         
+
        //começa no 4 e vai diminuindo de 1 em 1 até chegar no zero com ajuda do i--
         for(int i = 4;i >= 0; i--) {
+
+       //tambem serve tamanho.length no lugar do 5
+        //for(int i = 5 - 1;i >= 0; i--) {
+
         
             System.out.println("Vetor INVERTIDO:");
             System.out.println(tamanho[i]);

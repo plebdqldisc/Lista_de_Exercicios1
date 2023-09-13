@@ -2,7 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+//<<<<<<< HEAD
 package com.mycompany.NewListExercicios1_Vetor;
+//=======
+
+//>>>>>>> 55a2514938aeb3fc6e8dfa3886d5dc4b1b50f637
 //filtragem de valores pares
 /**
  *
@@ -19,4 +23,8 @@ public class ex_5vetor {
             }
         }
     }
+//<<<<<<< HEAD
 }
+//=======
+//}
+//>>>>>>> 55a2514938aeb3fc6e8dfa3886d5dc4b1b50f637
