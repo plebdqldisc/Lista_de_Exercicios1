@@ -12,10 +12,14 @@ public class ProgramaCalculadora {
     public static void main(String[] args) {
         Calculadora calculadora = new Calculadora();
         calculadoracientifica cc = new calculadoracientifica();
+        CalculadoraMedia CalcM = new CalculadoraMedia();
         
         Scanner scanner = new Scanner (System.in);
         
-        float soma, sub, mult, div, num1, num2;
+        float soma, sub, mult, div, num1, num2, a, b, ps1, ps2;
+        
+        float MeArSi = CalcM.mediaSimples(0, 0);
+        
         
         System.out.println("Informe o primeiro numero: ");
         num1 = scanner.nextFloat();
@@ -54,5 +58,12 @@ public class ProgramaCalculadora {
         
         System.out.println(num + " elevado a " + numPot + " é: " + pow);
         
+        System.out.println("-------------------------------------------------");
+        
+        System.out.println("Agora informe qual media aritmetica deseja fazer! : ");
+        System.out.println("Se você deseja Media Aritmetica Simples - digite: MeArSi ");
+        System.out.println("OU");
+        System.out.println("Se você deseja Media Aritmetica Ponderada - digite: MeArPo ");
+        System.out.println(scanner.nextFloat());
     }
 }
