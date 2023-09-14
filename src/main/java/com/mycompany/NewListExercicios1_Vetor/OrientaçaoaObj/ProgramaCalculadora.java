@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.NewListExercicios1_Vetor.OrientaçaoaObj;
+package OrientaçãoaObj;
 import java.util.Scanner;
 /**
  *
- * @author arthur.7923
+ * @author Usuario
  */
 public class ProgramaCalculadora {
     public static void main(String[] args) {
@@ -16,9 +16,11 @@ public class ProgramaCalculadora {
         
         Scanner scanner = new Scanner (System.in);
         
-        float soma, sub, mult, div, num1, num2, a, b, ps1, ps2;
+        float soma, sub, mult, div, num1, num2, digit1, digit2, peso1, peso2;
+        int opcao;
         
-        float MeArSi = CalcM.mediaSimples(0, 0);
+        int MeArSi;
+        int MeArPo;
         
         
         System.out.println("Informe o primeiro numero: ");
@@ -61,9 +63,42 @@ public class ProgramaCalculadora {
         System.out.println("-------------------------------------------------");
         
         System.out.println("Agora informe qual media aritmetica deseja fazer! : ");
-        System.out.println("Se você deseja Media Aritmetica Simples - digite: MeArSi ");
+        System.out.println("Se você deseja Media Aritmetica Simples - digite: 1 ");
         System.out.println("OU");
-        System.out.println("Se você deseja Media Aritmetica Ponderada - digite: MeArPo ");
-        System.out.println(scanner.nextFloat());
+        System.out.println("Se você deseja Media Aritmetica Ponderada - digite: 2 ");
+        opcao = scanner.nextInt();
+        
+        if (opcao == 1) {
+
+            System.out.println("Media Simples");
+            System.out.println("UM DE DOIS: Digite um numero: ");
+            digit1 = scanner.nextFloat();
+            System.out.println("DOIS DE DOIS: Digite um numero: ");
+            digit2 = scanner.nextFloat();
+            
+            CalcM.mediaSimples(digit1, digit2);
+            
+            System.out.println("Sua media de :" + digit1 + " + " + digit2 + " deu a media de " + CalcM.mediaSimples(digit1, digit2) );
+            
+            System.out.println("Fim da simulação");
+
+        }
+        if (opcao == 2) {
+            
+            System.out.println("Media Ponderada");
+            
+            System.out.println("UM DE QUATRO: Digite um numero(1): ");
+            digit1 = scanner.nextFloat();
+            System.out.println("DOIS DE QUATRO: Digite um numero(2): ");
+            digit2 = scanner.nextFloat();
+            System.out.println("TRÊS DE QUATRO: Digite o peso(1): ");
+            peso1 = scanner.nextFloat();
+            System.out.println("QUATRO DE QUATRO: Digite o peso(2): ");
+            peso2 = scanner.nextFloat();
+            
+            System.out.println("Sua media de : " + digit1 + " * " + peso1 + " + " + digit2 + " * " + peso2 + " / " + peso1 + " + " + peso2 + " deu a media ponderada de: " + CalcM.mediaPonderada(digit1, peso1, digit2, peso2));
+            
+            System.out.println("FIM DA SIMULAÇÃO");
+        }
     }
 }
