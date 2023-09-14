@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package OrientaçãoaObj;
+package com.mycompany.NewListExercicios1_Vetor.OrientaçaoaObj;
 
 /**
  *
- * @author Usuario
+ * @author arthur.7923
  */
 public class CalculadoraMedia {
     // Classe base para a Calculadora
